@@ -78,7 +78,7 @@ public class Main {
 
         System.out.println("Aantal artikelen for klant1 is : " + (em.find(Klant.class, 1L)).getArtikelen().size());
         System.out.println("De naam van 2e klant is : " + klantDao.findById(2));
-        System.out.println ("De klant3 adres is" + klantDao.findObjectByName("klant3").toString() );
+        System.out.println ("De klant3 details is" + klantDao.findObjectByName("klant3").toString() );
         em.clear();
         System.out.println("the nummber of klanten witch got artikel3 is :" + (em.find(Artikel.class, 3L)).getKlanten().size());
         em.close();
